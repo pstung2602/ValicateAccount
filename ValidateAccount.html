@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let AccountRegularExp = function (str) {
+        let regexp = /^[_a-z0-9]{6,}$/;
+        if(regexp.test(str)){
+            return true;
+        }
+            return false;
+
+    };
+    let account1="123abc_";
+    console.log(AccountRegularExp(account1));
+    let account2="123Abc_sadsd";
+    console.log(AccountRegularExp(account2));
+</script>
+
+
+</body>
+</html>
